@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import WebApp from "@twa-dev/sdk";
+import TelegramAuth from "../components/TelegramAuth";
 
 interface UserData {
   id: number;
@@ -38,6 +39,7 @@ export default function Home() {
       ) : (
         <div>Loading....</div>
       )}
+      <TelegramAuth />
     </main>
   );
 }
