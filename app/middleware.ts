@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { getSession, updateSession } from "../get-user-data/utils/sessions";
+import { getSession, updateSession } from "../utils/sessions";
 
 export async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/protected")) {
